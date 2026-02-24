@@ -43,15 +43,25 @@ Route::get('/user/{name?}', function ($name = 'John') {
 
 Route::get('/hello', [WelcomeController::class, 'hello']);
 
-Route::get('/', [PageController::class,'index']);
-Route::get('/about', [PageController::class,'about']);
-Route::get('/articles/{id}', [PageController::class,'articles']);
+Route::get('/', [PageController::class, 'index']);
+Route::get('/about', [PageController::class, 'about']);
+Route::get('/articles/{id}', [PageController::class, 'articles']);
 
-Route::get('/', [AboutController::class,'index']);
-Route::get('/about', [HomeController::class,'index']);
-Route::get('/articles/{id}', [ArticleController::class,'index']);
+Route::get('/', [AboutController::class, 'index']);
+Route::get('/about', [HomeController::class, 'index']);
+Route::get('/articles/{id}', [ArticleController::class, 'index']);
 
 Route::resource('photos', PhotoController::class);
 
 Route::resource('photos', PhotoController::class)->only(['index', 'show']);
 Route::resource('photos', PhotoController::class)->except(['create', 'store', 'update', 'destroy']);
+
+//Route::get('/greeting', function () {
+//    return view('hello', ['name' => 'Marta']);
+//});
+
+Route::get('/greeting', [WelcomeController::class,'greeting']);
+
+// Route::get('/greeting', function () {
+//     return view('blog.hello', ['name' => 'Marta']);
+// });
