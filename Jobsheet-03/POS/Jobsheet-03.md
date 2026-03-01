@@ -55,3 +55,10 @@ Note: Data level_nama di id ke-4 berubah/di-update dari Pelanggan menjadi Custom
 ![](img/26.png)
 
 ## PRAKTIKUM 6
+![](img/27.png)
+Note: Menampilkan data pada tabel User
+
+![](img/28.png)
+Note: Data error, karena mencoba memasukkan data ke tabel m_user, tetapi nilai pada kolom level_id tidak ditemukan di tabel referensinya, yaitu m_level. Dan karena ID 4 tidak ada di tabel m_level, database menolak data tersebut untuk menjaga konsistensi data.
+
+![](img/29.png)
