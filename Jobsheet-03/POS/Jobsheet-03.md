@@ -42,5 +42,16 @@ Note: Data level_nama di id ke-4 berubah/di-update dari Pelanggan menjadi Custom
 ![](img/22.png)
 
 ## PRAKTIKUM 5
+### Menambahkan 1 data
+![](img/23.png)
+
+### Meng-update data
+![](img/24.png)
+
+### Menghapus data
+![](img/25.png)
+
+### Menampilkan data
+![](img/26.png)
 
 ## PRAKTIKUM 6
