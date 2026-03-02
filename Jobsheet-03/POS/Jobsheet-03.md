@@ -62,7 +62,16 @@ Note: menampilkan data pada tabel User
 ![](img/28.png)
 Note: Data error, karena mencoba memasukkan data ke tabel m_user, tetapi nilai pada kolom level_id tidak ditemukan di tabel referensinya, yaitu m_level. Dan karena ID 4 tidak ada di tabel m_level, database menolak data tersebut untuk menjaga konsistensi data.
 
+### Solusi
+Menambahkan level 4 
+![](img/30.png)
+![](img/31.png)
+
+### Modifikasi UserController menggunakan Hash
 ![](img/29.png)
+
+### Update data UserController  
+![](img/32.png)
 
 ## PENUTUP
 1. Di dalam Laravel, APP_KEY digunakan untuk berbagai proses keamanan, terutama yang berhubungan dengan enkripsi dan keamanan data.
