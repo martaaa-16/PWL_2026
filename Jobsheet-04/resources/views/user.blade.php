@@ -7,6 +7,7 @@
 
 <body>
     <h1>Data User</h1>
+    <a href="/user/tambah">+ Tambah User</a>
     <table border="1" cellpadding="2" cellspacing="0">
         <tr>
             <th>ID</th>
