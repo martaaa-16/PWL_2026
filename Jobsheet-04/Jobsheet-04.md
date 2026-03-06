@@ -67,6 +67,9 @@ Pada kolom Aksi, akan muncul dua link untuk setiap pengguna:
 - Ubah: Mengarah ke URL seperti /user/ubah/1.
 - Hapus: Mengarah ke URL seperti /user/hapus/1.
 
+![](img/21.png)
+Tetap menampilkan seluruh tabel seperti langkah sebelumnya, karena tidak ada tombol atau tulisan "+ Tambah User" di halaman daftar user, hal itu disebabkan karena link tersebut memang belum ditambahkan secara manual di dalam file user.blade.php.
+
 ![](img/22.png)
 Menampilkan Form Tambah Data User 
 
