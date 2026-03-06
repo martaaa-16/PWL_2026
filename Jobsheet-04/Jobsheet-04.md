@@ -13,8 +13,10 @@ Data yang muncul adalah data user yang memiliki user_id = 1 dari tabel m_user. T
 ![](img/4.png)
 Halaman web akan menampilkan satu baris data pengguna yang memiliki nilai level_id = 1. Berbeda dengan find() yang secara otomatis mencari berdasarkan Primary Key (user_id), metode where() memungkinkan mencari data berdasarkan kolom apa pun yang ada di tabel, dalam hal ini adalah kolom level_id.
 
-### Praktikum 2.2
 ![](img/5.png)
+Hasil yang muncul di browser akan sama persis dengan penggunaan where('level_id', 1)->first(). Halaman akan menampilkan satu baris data pengguna yang memiliki level_id = 1.
+
+### Praktikum 2.2
 ![](img/6.png)
 ![](img/7.png)
 ![](img/8.png)
