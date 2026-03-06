@@ -52,7 +52,7 @@ class UserController extends Controller
         /*$userCount = UserModel::where('level_id', 2)->count();
         return view('user', ['jumlahPengguna' => $userCount]);*/
 
-        $user = UserModel::create(
+        /*$user = UserModel::create(
             [
                 'username' => 'manager11',
                 'nama' => 'Manager11',
@@ -68,6 +68,9 @@ class UserController extends Controller
         $user->wasChanged('username'); // true
         $user->wasChanged(['username', 'level_id']); // true
         $user->wasChanged('nama'); // false
-        $user->wasChanged(['nama', 'username']); // true
+        $user->wasChanged(['nama', 'username']); // true*/
+
+        $user = UserModel::all();
+        return view('user', ['data' => $user]);
     }
 }

@@ -61,5 +61,10 @@ Browser menampilkan halaman hitam khas Laravel dari fungdi dd() yang menampilkan
 Menampilkan halaman kosong, karena tidak ada perintah return view(...) untuk memanggil file Blade dan tidak ada dd() atau echo untuk melakukan pengecekan logika (wasChanged), tetapi hasilnya tidak dicetak ke layar. Namun meskipun layar kosong, database berhasil diperbarui. User 'manager11' dibuar, lalu namanya langsung diubah menjadi 'manager12'.
 
 ### Praktikum 2.6
+![](img/21.png)
+Halaman akan menampilkan tabel dengan kolom: ID, Username, Nama, ID Level Pengguna, dan Aksi. UserModel::all() membuat setiap baris data yang ada di tabel m_user akan muncul satu per satu karena perintah @foreach. 
+Pada kolom Aksi, akan muncul dua link untuk setiap pengguna:
+- Ubah: Mengarah ke URL seperti /user/ubah/1.
+- Hapus: Mengarah ke URL seperti /user/hapus/1.
 
 ### Praktikum 2.7
