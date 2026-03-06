@@ -27,6 +27,8 @@ Karena User dengan ID 20 tidak ada, amakamaka browser tidak akan menampilkan tab
 Browser akan menampilkan satu baris data pengguna (ID, Username, Nama, dan ID Level) dengan ID 1 di dalam tabel sesuai dengan isi file user.blade.php.
 
 ![](img/9.png)
+Data dengan username 'manager9' tidak ada, maka browser menampilkan halaman error 404 (Not Found).
+
 ![](img/10.png)
 
 ## PRAKTIKUM 3
