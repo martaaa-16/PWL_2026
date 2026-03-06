@@ -10,10 +10,10 @@ Error karena password dihapus dari $fillable sementara DB mewajibkan mengisinya.
 ![](img/3.png)
 Data yang muncul adalah data user yang memiliki user_id = 1 dari tabel m_user. Tabel tersebut akan menampilkan kolom: ID, Username, Nama, dan ID Level Pengguna.
 
-
+![](img/4.png)
+Halaman web akan menampilkan satu baris data pengguna yang memiliki nilai level_id = 1. Berbeda dengan find() yang secara otomatis mencari berdasarkan Primary Key (user_id), metode where() memungkinkan mencari data berdasarkan kolom apa pun yang ada di tabel, dalam hal ini adalah kolom level_id.
 
 ### Praktikum 2.2
-![](img/4.png)
 ![](img/5.png)
 ![](img/6.png)
 ![](img/7.png)
