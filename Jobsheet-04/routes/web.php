@@ -26,10 +26,10 @@ Route::get('/user/ubah/{id}', [UserController::class, 'ubah']);
 
 // 2. Products (Route Prefix Category)
 //Route::prefix('category')->group(function () {
-    //Route::get('/food-beverage', [ProductController::class, 'foodBeverage']);
-    //Route::get('/beauty-health', [ProductController::class, 'beautyHealth']);
-    //Route::get('/home-care', [ProductController::class, 'homeCare']);
-    //Route::get('/baby-kid', [ProductController::class, 'babyKid']);
+//Route::get('/food-beverage', [ProductController::class, 'foodBeverage']);
+//Route::get('/beauty-health', [ProductController::class, 'beautyHealth']);
+//Route::get('/home-care', [ProductController::class, 'homeCare']);
+//Route::get('/baby-kid', [ProductController::class, 'babyKid']);
 //});
 
 // 3. User (Route Parameter)

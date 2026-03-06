@@ -75,5 +75,7 @@ Menampilkan seluruh data user, ketika di klik link “+ Tambah User” browser t
 Menampilkan Form Tambah Data User 
 
 ![](img/23.png)
+![](img/25.png)
+Memunculkan Form Ubah Data User ketika mengklik link 'Ubah'. Namun, ketika ingin menyimpan perubahan akan muncul pesan error, karena tidak ada perintah Route::put untuk memproses/menyimpan hasil perubahan di form tersebut ke dalam database.
 
 ### Praktikum 2.7
