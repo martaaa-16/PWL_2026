@@ -82,3 +82,6 @@ Memunculkan Form Ubah Data User ketika mengklik link 'Ubah'. Namun, ketika ingin
 ![](img/21.png)
 ![](img/26.png)
 Data di ID 1 berhasil diubah
+
+![](img/27.png)
+Menghapus data pada ID 19
