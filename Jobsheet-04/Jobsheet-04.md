@@ -7,9 +7,12 @@ Error karena password dihapus dari $fillable sementara DB mewajibkan mengisinya.
 
 ## PRAKTIKUM 2
 ### Praktikum 2.1
+![](img/3.png)
+Data yang muncul adalah data user yang memiliki user_id = 1 dari tabel m_user. Tabel tersebut akan menampilkan kolom: ID, Username, Nama, dan ID Level Pengguna.
+
+
 
 ### Praktikum 2.2
-![](img/3.png)
 ![](img/4.png)
 ![](img/5.png)
 ![](img/6.png)
