@@ -29,10 +29,13 @@ Browser akan menampilkan satu baris data pengguna (ID, Username, Nama, dan ID Le
 ![](img/9.png)
 Data dengan username 'manager9' tidak ada, maka browser menampilkan halaman error 404 (Not Found).
 
+### Praktikum 2.3
 ![](img/10.png)
+Halaman tidak akan menampilkan tabel atau view user, melainkan  menampilkan halaman hitam khas Laravel dari fungsi dd() (Dump and Die). Di layar tersebut hanya akan muncul sebuah angka (integer) yang menunjukkan jumlah baris data.
+
+![](img/11.png)
 
 ## PRAKTIKUM 3
-![](img/11.png)
 ![](img/12.png)
 ![](img/13.png)
 ![](img/14.png)
