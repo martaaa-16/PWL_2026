@@ -39,8 +39,10 @@ Halaman tidak akan menampilkan tabel atau view user, melainkan  menampilkan hala
 ![](img/12.png)
 Halaman browser hanya akan menampilkan tabel berisi data user (ID, Username, Nama, ID Level) karena user dengan username 'manager' sudah ada di database sebelumnya. Fungsi firstOrCreate() hanya akan menjalankan fungsi "first" (mengambil data yang sudah ada) tanpa mencoba membuat data baru.
 
-## PRAKTIKUM 3
 ![](img/13.png)
+Karena data dengan username 'manager22' tidak ada, maka membuat tabel berisi data user 'manager22'. Jika di refresh, fungsi firstOrCreate() tidak akan membuat data baru lagi, melainkan hanya mengambil data 'manager22' yang sudah ada dari database.
+
+## PRAKTIKUM 3
 ![](img/14.png)
 ![](img/15.png)
 ![](img/16.png)
