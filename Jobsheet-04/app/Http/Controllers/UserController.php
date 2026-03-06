@@ -61,9 +61,9 @@ class UserController extends Controller
             ],
         );
         $user->username = 'manager12';
-        
+
         $user->save();
-        
+
         $user->wasChanged(); // true
         $user->wasChanged('username'); // true
         $user->wasChanged(['username', 'level_id']); // true
@@ -72,5 +72,10 @@ class UserController extends Controller
 
         $user = UserModel::all();
         return view('user', ['data' => $user]);
+    }
+
+    public function tambah()
+    {
+        return view('user_tambah');
     }
 }

@@ -67,4 +67,7 @@ Pada kolom Aksi, akan muncul dua link untuk setiap pengguna:
 - Ubah: Mengarah ke URL seperti /user/ubah/1.
 - Hapus: Mengarah ke URL seperti /user/hapus/1.
 
+![](img/22.png)
+Menampilkan Form Tambah Data User 
+
 ### Praktikum 2.7
