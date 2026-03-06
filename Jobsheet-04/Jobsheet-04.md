@@ -57,6 +57,9 @@ Data dengan username 'mannager33' sudah tersimpan di database, sehingga pada bro
 ![](img/19.png)
 Browser menampilkan halaman hitam khas Laravel dari fungdi dd() yang menampilkan nilai false. Laravel menyimpan data 'manager55' ke database. Pada titik ini, data di PHP dan database sama (Clean). Namun, ada perinrah mengubah username manjadi 'manager56', jadi data di PHP berbeda dengan di database (Dirty). Karena ada perbedaan yang belum disimpan, maka isDirty() bernilai true. Denagn perintah $user->save();, Laravel menjalankan perintah update ke database, sehingga data di database sudah berubah menjadi 'manager56'. Karena data di PHP dan di database sudah sama, maka isDirty() bernilai false.
 
+![](img/20.png)
+Menampilkan halaman kosong, karena tidak ada perintah return view(...) untuk memanggil file Blade dan tidak ada dd() atau echo untuk melakukan pengecekan logika (wasChanged), tetapi hasilnya tidak dicetak ke layar. Namun meskipun layar kosong, database berhasil diperbarui. User 'manager11' dibuar, lalu namanya langsung diubah menjadi 'manager12'.
+
 ### Praktikum 2.6
 
 ### Praktikum 2.7
