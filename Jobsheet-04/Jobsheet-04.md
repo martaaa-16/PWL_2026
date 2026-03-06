@@ -49,9 +49,12 @@ Halaman browser akan menampilkan tabel data lengkap milik user tersebut. Karena 
 ![](img/16.png)
 Karena data dengan username 'manager33' belum ada, maka browser tetap memunculkan tabel data dengan username 'manager33' tetapi kolom ID akan kosong. Hal ini terjadi karena data tersebut baru ada di memori (RAM) dan belum mendapatkan ID  dari database. Dan data tersebut tidak akan tersimpan di database, karena tidak ada perintah $user->save() setelahnya.
 
-## PRAKTIKUM 3
 ![](img/17.png)
 ![](img/18.png)
+Data dengan username 'mannager33' sudah tersimpan di database, sehingga pada browser muncul ID-nya juga, karena sudah ditambahkan perintah $user->save() setelahnya.
+
+## PRAKTIKUM 3
+
 
 ## PRAKTIKUM 4
 ### Insert/menambahkan data
