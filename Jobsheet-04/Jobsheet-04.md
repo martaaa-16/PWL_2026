@@ -16,8 +16,10 @@ Halaman web akan menampilkan satu baris data pengguna yang memiliki nilai level_
 ![](img/5.png)
 Hasil yang muncul di browser akan sama persis dengan penggunaan where('level_id', 1)->first(). Halaman akan menampilkan satu baris data pengguna yang memiliki level_id = 1.
 
-### Praktikum 2.2
 ![](img/6.png)
+Karena User dengan ID 1 ada, maka browser menampilkan tabel data user tersebut. Namun, kolom user_id dan level_id kosong di halaman view jika script user.blade.php tetap mencoba mengaksesnya. Tetapi jika User dengan ID 1 tidak ada, maka browser tidak akan menampilkan tabel, melainkan langsung memunculkan halaman 404 Not Found.
+
+### Praktikum 2.2
 ![](img/7.png)
 ![](img/8.png)
 ![](img/9.png)
