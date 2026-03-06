@@ -79,3 +79,6 @@ Menampilkan Form Tambah Data User
 Memunculkan Form Ubah Data User ketika mengklik link 'Ubah'. Namun, ketika ingin menyimpan perubahan akan muncul pesan error, karena tidak ada perintah Route::put untuk memproses/menyimpan hasil perubahan di form tersebut ke dalam database.
 
 ### Praktikum 2.7
+![](img/21.png)
+![](img/26.png)
+Data di ID 1 berhasil diubah
