@@ -24,6 +24,8 @@ Karena User dengan ID 20 tidak ada, amakamaka browser tidak akan menampilkan tab
 
 ### Praktikum 2.2
 ![](img/8.png)
+Browser akan menampilkan satu baris data pengguna (ID, Username, Nama, dan ID Level) dengan ID 1 di dalam tabel sesuai dengan isi file user.blade.php.
+
 ![](img/9.png)
 ![](img/10.png)
 
