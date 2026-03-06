@@ -45,9 +45,11 @@ Karena data dengan username 'manager22' tidak ada, maka membuat tabel berisi dat
 ![](img/14.png)
 Halaman browser akan menampilkan tabel data lengkap milik user tersebut. Karena data diambil langsung dari database (bukan objek baru di memori), maka seluruh kolom yang ada pada baris tersebut akan muncul, termasuk ID (user_id) dan ID Level Pengguna (level_id).
 
-## PRAKTIKUM 3
 ![](img/15.png)
 ![](img/16.png)
+Karena data dengan username 'manager33' belum ada, maka browser tetap memunculkan tabel data dengan username 'manager33' tetapi kolom ID akan kosong. Hal ini terjadi karena data tersebut baru ada di memori (RAM) dan belum mendapatkan ID  dari database. Dan data tersebut tidak akan tersimpan di database, karena tidak ada perintah $user->save() setelahnya.
+
+## PRAKTIKUM 3
 ![](img/17.png)
 ![](img/18.png)
 
