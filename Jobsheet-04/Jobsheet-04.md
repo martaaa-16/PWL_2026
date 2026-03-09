@@ -78,10 +78,13 @@ Menampilkan Form Tambah Data User
 ![](img/25.png)
 Memunculkan Form Ubah Data User ketika mengklik link 'Ubah'. Namun, ketika ingin menyimpan perubahan akan muncul pesan error, karena tidak ada perintah Route::put untuk memproses/menyimpan hasil perubahan di form tersebut ke dalam database.
 
-### Praktikum 2.7
 ![](img/21.png)
 ![](img/26.png)
 Data di ID 1 berhasil diubah
 
 ![](img/27.png)
 Menghapus data pada ID 19
+
+### Praktikum 2.7
+![](img/28.png)
+Gambar tersebut menunjukkan bahwa fungsi index pada UserController telah berhasil melakukan Eager Loading untuk mengambil 8 data user beserta relasi levelnya. Munculnya objek Collection membuktikan bahwa koneksi ke database, definisi model, dan pengaturan nama tabel (m_level dan m_user) sudah sinkron dan siap untuk ditampilkan ke halaman web.
