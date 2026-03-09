@@ -88,3 +88,6 @@ Menghapus data pada ID 19
 ### Praktikum 2.7
 ![](img/28.png)
 Gambar tersebut menunjukkan bahwa fungsi index pada UserController telah berhasil melakukan Eager Loading untuk mengambil 8 data user beserta relasi levelnya. Munculnya objek Collection membuktikan bahwa koneksi ke database, definisi model, dan pengaturan nama tabel (m_level dan m_user) sudah sinkron dan siap untuk ditampilkan ke halaman web.
+
+![](img/29.png)
+Menerapkan Eager Loading menggunakan fungsi with('level')->get() di UserController untuk menampilkan data dari dua tabel yang saling berelasi (m_user dan m_level). Hal tersebut hanya melakukan dua query database untuk menarik data user beserta informasi levelnya, sehingga mencegah masalah performa yang dikenal sebagai N+1 Query Problem.
