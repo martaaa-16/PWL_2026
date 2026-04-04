@@ -128,6 +128,8 @@ Hasil:
 • Muncul pesan error berwarna merah otomatis
 
 Cara menambahkan validasi menggunakan method rule() (Multiple Validation)
+![](img/30.png)
+
 
 
 ### K. Analisis & Diskusi
