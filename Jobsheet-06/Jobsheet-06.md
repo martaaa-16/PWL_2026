@@ -130,6 +130,8 @@ Hasil:
 Cara menambahkan validasi menggunakan method rule() (Multiple Validation)
 ![](img/30.png)
 
+Validasi Unique
+![](img/31.png)
 
 ### K. Analisis & Diskusi
 1. Mengapa validasi penting pada admin panel?
