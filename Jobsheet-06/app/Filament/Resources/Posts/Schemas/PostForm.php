@@ -31,11 +31,12 @@ class PostForm
                     ->schema([
                         Group::make([
                             TextInput::make('title')
-                            ->rules('required'),
-                                //->rules('required|min:3|max:10'),
+                                //->rules('required'),
+                                ->rules('required|min:3|max:10'),
                             TextInput::make('slug')
-                            ->rules('required')
-                            ->unique(),
+                                ->rules('required')
+                                ->unique()
+                                ->validationMessages(['unique' => 'Slug must be unique.']),
                             Select::make('category_id')
                                 ->relationship('category', 'name')
                                 ->preload()
@@ -50,6 +51,7 @@ class PostForm
                             Section::make('Image Upload')
                                 ->schema([
                                     FileUpload::make('image')
+                                        ->required()
                                         ->disk('public')
                                         ->directory('posts'),
                                 ]),

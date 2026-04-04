@@ -133,6 +133,9 @@ Cara menambahkan validasi menggunakan method rule() (Multiple Validation)
 Validasi Unique
 ![](img/31.png)
 
+Mengganti Pesan Error (Custom Message)
+![](img/32.png)
+
 ### K. Analisis & Diskusi
 1. Mengapa validasi penting pada admin panel?
 2. Apa perbedaan validasi client-side dan server-side?
