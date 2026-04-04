@@ -12,6 +12,8 @@ use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\DateTimePicker;
+use Filament\Schemas\Components\Section;
+use Filament\Support\Icons\HeroIcon;
 
 class PostForm
 {
@@ -20,14 +22,19 @@ class PostForm
         return $schema
             ->components([
                 //
-                TextInput::make('title'),
-                TextInput::make('slug'),
-                Select::make('category_id')
-                    ->relationship('category', 'name')
-                    ->preload()
-                    ->searchable(),
-                ColorPicker::make('color'),
-                MarkdownEditor::make('body'),
+                Section::make('Post Details')
+                    ->description('Fill in the details of the post')
+                    ->icon(HeroIcon::DocumentText)
+                    ->schema([
+                        TextInput::make('title'),
+                        TextInput::make('slug'),
+                        Select::make('category_id')
+                            ->relationship('category', 'name')
+                            ->preload()
+                            ->searchable(),
+                        ColorPicker::make('color'),
+                        MarkdownEditor::make('body'),
+                    ]),
                 //RichEditor::make('content'),
                 FileUpload::make('image')
                     ->disk('public')
@@ -35,6 +42,6 @@ class PostForm
                 TagsInput::make('tags'),
                 Checkbox::make('published'),
                 DateTimePicker::make('published_at'),
-            ])->columns(3);
+            ])->columns(2);
     }
 }

@@ -71,6 +71,9 @@ Membuat 3 field dalam satu baris
 Atau jika membuat layout yang berbeda lagi
 ![](img/22.png)
 
+Membuat Section "Post Details"
+
+
 ### I. Analisis & Diskusi
 1. Mengapa layout form penting dalam aplikasi admin?
 2. Apa perbedaan Section dan Group?
