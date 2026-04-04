@@ -69,7 +69,7 @@ Membuat 3 field dalam satu baris
 ![](img/21.png)
 
 Atau jika membuat layout yang berbeda lagi
-
+![](img/22.png)
 
 ### I. Analisis & Diskusi
 1. Mengapa layout form penting dalam aplikasi admin?
