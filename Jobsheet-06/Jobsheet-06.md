@@ -81,7 +81,10 @@ Contoh layout lain
 ![](img/25.png)
 
 Menggunakan Group untuk Layout Horizontal
+![](img/26.png)
 
+Modifikasi layoutnya dengan mengatur columnnya
+![](img/27.png)
 
 ### I. Analisis & Diskusi
 1. Mengapa layout form penting dalam aplikasi admin?
