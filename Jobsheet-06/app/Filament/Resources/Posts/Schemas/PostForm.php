@@ -27,9 +27,9 @@ class PostForm
                     ->preload()
                     ->searchable(),
                 ColorPicker::make('color'),
-                MarkdownEditor::make('content'),
+                MarkdownEditor::make('body'),
                 //RichEditor::make('content'),
-                FileUpload::make('Image')
+                FileUpload::make('image')
                     ->disk('public')
                     ->directory('posts'),
                 TagsInput::make('tags'),

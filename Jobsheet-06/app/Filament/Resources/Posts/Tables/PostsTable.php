@@ -21,7 +21,8 @@ class PostsTable
                 TextColumn::make('category.name'),
                 ColorColumn::make('color'),
                 ImageColumn::make('image')
-                    ->disk('public'),
+                    ->disk('public')
+                    ->visibility('public'),
             ])
             ->filters([
                 //

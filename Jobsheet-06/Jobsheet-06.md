@@ -39,12 +39,16 @@ Menambahkan Data Picker (Published At)
 
 Contoh Implementasi Form
 ![](img/15.png)
+![](img/18.png)
 
 Data belum muncul
 ![](img/16.png)
 
 Memunculkan data
 ![](img/17.png)
+
+Jika gambar blm muncul maka lakukan 'php artisan storage:link' dan pastikan tulisan image pada PostForm dan PostTable sama
+![](img/19.png)
 
 ### I. Analisis & Diskusi
 1. Mengapa kita perlu storage:link?
@@ -53,7 +57,12 @@ Memunculkan data
 4. Apa perbedaan RichEditor dan MarkdownEditor?
 
 ### Jawab:
-1. 
+1. Laravel menyimpan file upload di folder storage/app/public/ yang tidak bisa diakses langsung oleh browser karena berada di luar folder public/. Perintah ini membuat symbolic link (pintasan) dari folder public/storage ke storage/app/public. Tujuannya agar file yang ada di dalam folder storage bisa diakses secara publik melalui URL, sehingga gambar dapat tampil di halaman web atau tabel Filament.
+2. Agar Filament (dan Laravel) dapat memperlakukan data tersebut sebagai array PHP biasa. Tanpa casting, data JSON akan terbaca sebagai string mentah, sehingga komponen, seperti TagsInput tidak akan bisa mengolah datanya dengan benar. Jadi, $casts adalah penerjemah otomatis antara format database (JSON string) dan format PHP (array), sehingga kita tidak perlu convert manual setiap kali baca/simpan data.
+3. Karena category_id hanya menyimpan angka (foreign key), misalnya 1, 2, 3 — yang sulit dipahami oleh pengguna. Dengan category.name, Filament mengakses relasi belongsTo pada model Post untuk menampilkan nama category yang sebenarnya, misalnya "Laravel" atau "PHP".
+4. Keduanya adalah komponen untuk menginput teks panjang, namun memiliki format penyimpanan yang berbeda:
+- MarkdownEditor: Menyimpan data dalam format Markdown (menggunakan simbol seperti ** tebal **, # Heading). Ini lebih ringan dan sering digunakan jika data tersebut akan dikonversi lagi oleh parser Markdown di sisi front-end.
+- RichEditor: Menyimpan data dalam format HTML (menggunakan tag seperti ![](img/20.png)). Ini lebih umum digunakan jika kamu ingin hasil inputan langsung tampil persis seperti yang diketik (WYSIWYG) tanpa perlu konversi tambahan.
 
 ## Praktikum 5 - Custom Layout Form dengan Section & Group di Filament
 
