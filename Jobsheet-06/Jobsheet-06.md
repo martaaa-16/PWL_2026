@@ -118,12 +118,14 @@ Contoh penggunaan yang tepat:
 ## Praktikum 6 - Implementasi Form Validation pada Filament
 Cara menambahkan validasi menggunakan method required()
 ![](img/28.png)
+# 
 Hasil:
 • Tanda (*) merah muncul
 • Jika kosong → muncul pesan error otomatis
 
 Cara menambahkan validasi menggunakan method rule()
 ![](img/29.png)
+#
 Hasil:
 • Muncul pesan error berwarna merah otomatis
 
@@ -131,10 +133,13 @@ Cara menambahkan validasi menggunakan method rule() (Multiple Validation)
 ![](img/30.png)
 
 Validasi Unique
-![](img/31.png)
+# ![](img/31.png)
 
 Mengganti Pesan Error (Custom Message)
 ![](img/32.png)
+
+Validasi Lengkap Post
+# ![](img/33.png)
 
 ### K. Analisis & Diskusi
 1. Mengapa validasi penting pada admin panel?
@@ -143,3 +148,17 @@ Mengganti Pesan Error (Custom Message)
 4. Kapan kita perlu menggunakan rules array dibanding string?
 
 ### Jawab:
+1. Validasi penting karena:
+- Menjaga kualitas data: Tanpa validasi, admin bisa menyimpan data kosong, terlalu pendek, atau format yang salah ke database. Misalnya title kosong atau slug duplikat yang bisa menyebabkan error di aplikasi.
+- Keamanan: Validasi mencegah input berbahaya seperti script injection atau data yang tidak sesuai format yang bisa merusak sistem.
+- Mencegah bug: Data yang tidak valid bisa menyebabkan error di bagian lain aplikasi, misalnya slug duplikat yang menyebabkan URL bentrok.
+2. |  | Client-Side | Server-Side |
+    |------|------------|------------|
+    | **Lokasi** | Di browser pengguna (JavaScript) | Di server (Laravel/PHP) |
+    | **Kecepatan** | Lebih cepat, tidak perlu request ke server | Lebih lambat, perlu request ke server |
+    | **Keamanan** | Tidak aman, bisa dibypass | Aman, tidak bisa dibypass |
+    | **Contoh** | HTML required, JavaScript validation | Laravel ->required(), ->unique()
+    
+    Filament menggunakan server-side validation berbasis Laravel, sehingga validasinya lebih aman karena tidak bisa dilewati meski pengguna menonaktifkan JavaScript di browser.
+3. Validasi unique otomatis bekerja tanpa merusak proses edit karena Filament membantu menyisipkan ID record saat ini ke dalam pengecualian (exception) rule Laravel. Tanpa kemampuan ini, setiap kali menekan tombol "Save" pada halaman edit tanpa mengubah slug,  maka akan selalu terkena error "Slug sudah digunakan".
+4. Gunakan format string (pipe) untuk validasi sederhana, array untuk validasi kompleks atau banyak aturan.
