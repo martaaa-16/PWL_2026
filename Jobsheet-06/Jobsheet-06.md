@@ -116,6 +116,12 @@ Contoh penggunaan yang tepat:
 - Konsisten: semua elemen mengikuti sistem yang sama sehingga tampilan tetap rapi di berbagai ukuran layar
 
 ## Praktikum 6 - Implementasi Form Validation pada Filament
+Cara menambahkan validasi menggunakan method required()
+![](img/28.png)
+Hasil:
+• Tanda (*) merah muncul
+• Jika kosong → muncul pesan error otomatis
+
 
 
 ### K. Analisis & Diskusi

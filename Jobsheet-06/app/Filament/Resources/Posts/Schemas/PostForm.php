@@ -29,36 +29,39 @@ class PostForm
                     // -> icon(HeroIcon::RocketLaunch)
                     ->icon('heroicon-o-document-text')
                     ->schema([
-                        TextInput::make('title'),
-                        TextInput::make('slug'),
-                        Select::make('category_id')
-                            ->relationship('category', 'name')
-                            ->preload()
-                            ->searchable(),
-                        ColorPicker::make('color'),
-                        MarkdownEditor::make('body'),
-                    ])->columnSpan(2),
+                        Group::make([
+                            TextInput::make('title')
+                                ->required()
+                                ->maxLength(255),
+                            TextInput::make('slug'),
+                            Select::make('category_id')
+                                ->relationship('category', 'name')
+                                ->preload()
+                                ->searchable(),
+                            ColorPicker::make('color'),
+                            MarkdownEditor::make('body'),
+                        ])->columnSpan(2),
 
-                //Grouping fields into 2 columns
-                Group::make([
+                        //Grouping fields into 2 columns
+                        Group::make([
+                            //section 2 - image
+                            Section::make('Image Upload')
+                                ->schema([
+                                    FileUpload::make('image')
+                                        ->disk('public')
+                                        ->directory('posts'),
+                                ]),
 
-                    //section 2 - image
-                    Section::make('Image Upload')
-                        ->schema([
-                            FileUpload::make('image')
-                                ->disk('public')
-                                ->directory('posts'),
-                        ]),
-
-                    //section 3 - meta
-                    Section::make('Meta Information')
-                        ->schema([
-                            //RichEditor::make('content'),
-                            TagsInput::make('tags'),
-                            Checkbox::make('published'),
-                            DateTimePicker::make('published_at'),
-                        ]),
-                ])->columnSpan(1),
-            ])->columns(3);
+                            //section 3 - meta
+                            Section::make('Meta Information')
+                                ->schema([
+                                    //RichEditor::make('content'),
+                                    TagsInput::make('tags'),
+                                    Checkbox::make('published'),
+                                    DateTimePicker::make('published_at'),
+                                ]),
+                        ])->columnSpan(1),
+                    ])->columns(3),
+            ]);
     }
 }
