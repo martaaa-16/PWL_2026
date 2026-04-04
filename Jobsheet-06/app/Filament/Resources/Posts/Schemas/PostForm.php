@@ -36,7 +36,7 @@ class PostForm
                             ->searchable(),
                         ColorPicker::make('color'),
                         MarkdownEditor::make('body'),
-                    ]),
+                    ])->columnSpanFull(),
 
                 //section 2 - image
                 Section::make('Image Upload')

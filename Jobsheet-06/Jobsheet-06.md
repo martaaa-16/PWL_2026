@@ -75,6 +75,12 @@ Membuat Section "Post Details"
 ![](img/23.png)
 
 Membuat Section Terpisah (Section Image Upload & Section Meta Data)
+![](img/24.png)
+
+Contoh layout lain
+![](img/25.png)
+
+Menggunakan Group untuk Layout Horizontal
 
 
 ### I. Analisis & Diskusi
