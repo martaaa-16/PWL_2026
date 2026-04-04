@@ -44,6 +44,7 @@ Data belum muncul
 ![](img/16.png)
 
 Memunculkan data
+![](img/17.png)
 
 ### I. Analisis & Diskusi
 1. Mengapa kita perlu storage:link?
