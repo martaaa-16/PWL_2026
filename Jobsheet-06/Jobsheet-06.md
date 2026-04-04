@@ -131,7 +131,6 @@ Cara menambahkan validasi menggunakan method rule() (Multiple Validation)
 ![](img/30.png)
 
 
-
 ### K. Analisis & Diskusi
 1. Mengapa validasi penting pada admin panel?
 2. Apa perbedaan validasi client-side dan server-side?
