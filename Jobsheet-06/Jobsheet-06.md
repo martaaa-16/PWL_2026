@@ -65,6 +65,10 @@ Jika gambar blm muncul maka lakukan 'php artisan storage:link' dan pastikan tuli
 - RichEditor: Menyimpan data dalam format HTML (menggunakan tag seperti ![](img/20.png)). Ini lebih umum digunakan jika kamu ingin hasil inputan langsung tampil persis seperti yang diketik (WYSIWYG) tanpa perlu konversi tambahan.
 
 ## Praktikum 5 - Custom Layout Form dengan Section & Group di Filament
+Membuat 3 field dalam satu baris
+![](img/21.png)
+
+Atau jika membuat layout yang berbeda lagi
 
 
 ### I. Analisis & Diskusi

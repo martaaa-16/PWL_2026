@@ -35,6 +35,6 @@ class PostForm
                 TagsInput::make('tags'),
                 Checkbox::make('published'),
                 DateTimePicker::make('published_at'),
-            ]);
+            ])->columns(3);
     }
 }
