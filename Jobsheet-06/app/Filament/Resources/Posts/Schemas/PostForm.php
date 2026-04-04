@@ -31,8 +31,7 @@ class PostForm
                     ->schema([
                         Group::make([
                             TextInput::make('title')
-                                ->required()
-                                ->maxLength(255),
+                                ->rules('required'),
                             TextInput::make('slug'),
                             Select::make('category_id')
                                 ->relationship('category', 'name')

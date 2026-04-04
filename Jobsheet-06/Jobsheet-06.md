@@ -122,6 +122,12 @@ Hasil:
 • Tanda (*) merah muncul
 • Jika kosong → muncul pesan error otomatis
 
+Cara menambahkan validasi menggunakan method rule()
+![](img/29.png)
+Hasil:
+• Muncul pesan error berwarna merah otomatis
+
+Cara menambahkan validasi menggunakan method rule() (Multiple Validation)
 
 
 ### K. Analisis & Diskusi
