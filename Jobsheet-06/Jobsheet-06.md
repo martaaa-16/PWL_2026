@@ -93,7 +93,27 @@ Modifikasi layoutnya dengan mengatur columnnya
 4. Apa keuntungan sistem grid 12 kolom?
 
 ### Jawab:
-
+1. Layout form yang baik sangat penting karena:
+- Kemudahan penggunaan: Admin yang mengisi form setiap hari akan jauh lebih produktif jika field-field yang berkaitan dikelompokkan bersama. Misalnya, field title dan slug diletakkan berdampingan karena keduanya saling berkaitan.
+- Mengurangi kesalahan: Ketika form tertata rapi dengan Section dan label yang jelas, admin lebih kecil kemungkinannya melewatkan field penting atau mengisi field yang salah.
+- Tampilan profesional: Aplikasi admin yang rapi mencerminkan kualitas sistem secara keseluruhan, meningkatkan kepercayaan pengguna terhadap aplikasi.
+2. |  | Section | Group |
+    |------|------------|------------|
+    | **Tampilan visual** | Ada box, judul, border | Tidak ada tampilan visual |
+    | **Fitur tambahan** | Bisa tambah deskripsi & icon | Tidak ada deskripsi/icon |
+    | **Fungsi utama** | Mengelompokkan field secara visual | Mengatur layout/proporsi kolom |
+    | **Contoh penggunaan** | "Post Details", "Image Upload" | Membagi layout kiri-kanan
+    
+    Singkatnya: Section untuk pengelompokan yang terlihat pengguna, Group untuk mengatur tata letak di balik layar.
+3. columnSpanFull() digunakan ketika sebuah field perlu memenuhi seluruh lebar form, tidak peduli berapa kolom yang digunakan.
+Contoh penggunaan yang tepat:
+- MarkdownEditor / RichEditor — editor teks butuh ruang lebar agar nyaman digunakan
+- FileUpload — area upload butuh ruang yang cukup
+- Field yang berisi informasi panjang seperti textarea
+4. Sistem grid 12 kolom (seperti Tailwind/Bootstrap) memberikan fleksibilitas tinggi dalam pembagian layout:
+- Mudah dibagi rata: 12 bisa dibagi dengan 1, 2, 3, 4, 6, dan 12 sehingga hampir semua proporsi bisa dibuat
+- Proporsi fleksibel: bisa membuat layout 2/3 + 1/3, atau 1/2 + 1/2, atau 1/4 + 3/4, semuanya menggunakan angka bulat
+- Konsisten: semua elemen mengikuti sistem yang sama sehingga tampilan tetap rapi di berbagai ukuran layar
 
 ## Praktikum 6 - Implementasi Form Validation pada Filament
 
