@@ -13,7 +13,7 @@ use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Schemas\Components\Section;
-use Filament\Support\Icons\HeroIcon;
+use Filament\Support\Icons\Heroicon;
 
 class PostForm
 {
@@ -23,8 +23,10 @@ class PostForm
             ->components([
                 //
                 Section::make('Post Details')
+                    //section 1 - post details
                     ->description('Fill in the details of the post')
-                    ->icon(HeroIcon::DocumentText)
+                    // -> icon(HeroIcon::RocketLaunch)
+                    ->icon('heroicon-o-document-text')
                     ->schema([
                         TextInput::make('title'),
                         TextInput::make('slug'),
@@ -35,13 +37,23 @@ class PostForm
                         ColorPicker::make('color'),
                         MarkdownEditor::make('body'),
                     ]),
-                //RichEditor::make('content'),
-                FileUpload::make('image')
-                    ->disk('public')
-                    ->directory('posts'),
-                TagsInput::make('tags'),
-                Checkbox::make('published'),
-                DateTimePicker::make('published_at'),
+
+                //section 2 - image
+                Section::make('Image Upload')
+                    ->schema([
+                        FileUpload::make('image')
+                            ->disk('public')
+                            ->directory('posts'),
+                    ]),
+
+                //section 3 - meta
+                Section::make('Meta Information')
+                    ->schema([
+                        //RichEditor::make('content'),
+                        TagsInput::make('tags'),
+                        Checkbox::make('published'),
+                        DateTimePicker::make('published_at'),
+                    ])
             ])->columns(2);
     }
 }

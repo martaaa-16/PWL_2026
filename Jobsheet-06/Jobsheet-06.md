@@ -72,6 +72,9 @@ Atau jika membuat layout yang berbeda lagi
 ![](img/22.png)
 
 Membuat Section "Post Details"
+![](img/23.png)
+
+Membuat Section Terpisah (Section Image Upload & Section Meta Data)
 
 
 ### I. Analisis & Diskusi
