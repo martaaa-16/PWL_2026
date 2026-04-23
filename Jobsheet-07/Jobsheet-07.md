@@ -88,3 +88,33 @@ Menampilkan Tanggal dengan Format
 - Estetika: Membuat tampilan Dashboard terlihat lebih modern dan profesional.
 
 ## Pertemuan 9 – Implementasi Tabs pada Info List di Filament
+### D. Implementasi Tabs
+Tab Product Info
+![](img/17.png)
+
+Tab Pricing & Stock
+![](img/18.png)
+
+Tab Media & Status
+![](img/19.png)
+
+### E. Tampilan Tabs Horizontal
+![](img/20.png)
+
+### F. Mengubah Tabs Menjadi Vertical
+Tampilan Tabs Vertical
+![](img/21.png)
+
+### K. Analisis & Diskusi
+1. Kapan kita menggunakan Tabs dibanding Section?
+2. Apa kelebihan Tabs untuk data panjang?
+3. Apakah Tabs bisa digunakan pada Form juga?
+4. Bagaimana jika tab terlalu banyak?
+
+### Jawab:
+1. Penggunaan Tabs dan Section:
+- Gunakan Section: Jika informasi Anda masih cukup ringkas (bisa discroll dengan cepat) dan ingin semua data terlihat langsung saat halaman dibuka.
+- Gunakan Tabs: Jika Anda memiliki banyak kategori informasi yang berbeda namun setara tingkatannya. Misalnya, memisahkan "Detail Produk", "Analitik Penjualan", dan "Riwayat Stok".
+2. Tabs sangat efektif untuk menjaga kebersihan tampilan (UI Cleanliness). Daripada pengguna harus melakukan scrolling yang melelahkan ke bawah, mereka cukup mengklik tab yang relevan. Ini membuat pengguna tidak merasa kewalahan saat melihat data yang sangat banyak dalam satu halaman.
+3. Ya, tentu saja. Penggunaannya sangat mirip dengan di Infolist. Anda bisa mengelompokkan input form ke dalam tab agar form tidak terlihat mengintimidasi. Bedanya, di Form Anda menggunakan Filament\Forms\Components\Tabs, sedangkan di Infolist menggunakan Filament\Infolists\Components\Tabs.
+4. Jika jumlah tab sudah melebihi lebar layar (terutama di perangkat mobile), Filament secara otomatis akan menangani navigasinya (biasanya menjadi scrollable horizontal atau menggunakan menu dropdown tergantung versi dan kustomisasi). Namun, dari sisi User Experience (UX), jika tab sudah lebih dari 5-7 buah, sebaiknya Anda mempertimbangkan untuk mengelompokkan kembali data tersebut atau menggunakan sistem navigasi yang berbeda agar tidak membingungkan.
