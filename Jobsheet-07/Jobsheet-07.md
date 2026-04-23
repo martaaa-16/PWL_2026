@@ -53,8 +53,21 @@ Wizard tidak cocok untuk form sederhana (login, kontak kami, atau survei 2-3 per
 
 ## Pertemuan 8 – Implementasi Info List (View Page) di Filament
 ### D. Membuat Section – Product Info
+![](img/12.png)
+
 ### E. Section – Pricing & Stock 
+![](img/13.png)
+
 ### F. Section – Media & Status
+Menampilkan Gambar
+![](img/14.png)
+
+Menampilkan Status Boolean
+![](img/15.png)
+
+Menampilkan Tanggal dengan Format
+![](img/16.png)
+
 ### L. Analisis & Diskusi
 1. Mengapa View Page tidak cocok menggunakan form input?
 2. Apa perbedaan TextColumn dan TextEntry?
@@ -62,6 +75,16 @@ Wizard tidak cocok untuk form sederhana (login, kontak kami, atau survei 2-3 per
 4. Apa keuntungan menggunakan IconEntry untuk boolean?
 
 ### Jawab:
-
+1. Halaman View bertujuan untuk menampilkan data (read-only) tanpa risiko terubah secara tidak sengaja. Menggunakan form input (seperti TextInput) di halaman View akan membingungkan pengguna karena mereka akan mencoba mengetik di sana, padahal datanya tidak akan tersimpan.
+2. Keduanya menampilkan teks, namun tempat penggunaannya berbeda:
+- TextColumn: Digunakan di dalam Table (halaman daftar data/Index) untuk menampilkan data dalam baris dan kolom.
+- TextEntry: Digunakan di dalam Infolist (halaman detail/View) untuk menampilkan satu data spesifik secara vertikal atau dalam grid.
+3. Gunakan badge() saat kamu ingin menonjolkan informasi yang berupa status, kategori, atau label pendek.
+- Contoh: Status stok ("Tersedia"), kategori produk ("Elektronik"), atau SKU.
+- Fungsi: Memberikan latar belakang warna (seperti kapsul) agar mata pengguna langsung tertuju pada informasi penting tersebut dibanding teks biasa.
+4. Dibandingkan menampilkan teks "Ya" atau "Tidak", IconEntry jauh lebih unggul karena:
+- Kecepatan Visual: Otak manusia memproses ikon (centang hijau/silang merah) jauh lebih cepat daripada membaca teks.
+- Hemat Ruang: Ikon jauh lebih ringkas.
+- Estetika: Membuat tampilan Dashboard terlihat lebih modern dan profesional.
 
 ## Pertemuan 9 – Implementasi Tabs pada Info List di Filament
