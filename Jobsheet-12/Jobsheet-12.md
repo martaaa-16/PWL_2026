@@ -5,6 +5,7 @@
 ![](img/1.png)
 
 ### C. Mengaktifkan Toggle Column
+![](img/2.png)
 
 ### D. Menyembunyikan Kolom Secara Default
 
