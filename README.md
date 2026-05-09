@@ -20,4 +20,5 @@ Repository untuk praktikum mata kuliah Pemrograman Web Lanjut menggunakan Larave
 - [Laporan Jobsheet-06](./Jobsheet-06/Jobsheet-06.md)
 - [Laporan Jobsheet-07](./Jobsheet-07/Jobsheet-07.md)
 - [Laporan Jobsheet-10](./Jobsheet-10/Jobsheet-10.md)
-- [Laporan Jobsheet-11](./Jobsheet-10/Jobsheet-11.md)
+- [Laporan Jobsheet-11](./Jobsheet-11/Jobsheet-11.md)
+- [Laporan Jobsheet-12](./Jobsheet-12/Jobsheet-12.md)
