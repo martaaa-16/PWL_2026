@@ -10,9 +10,8 @@
 ### D. Menyembunyikan Kolom Secara Default
 ![](img/3.png)
 
-### E. Penyimpanan Preferensi Kolom
-
 ### F. Menerapkan Toggle pada Semua Kolom
+![](img/4.png)
 
 ### J. Analisis & Diskusi
 1. Mengapa toggle column penting pada admin panel?
