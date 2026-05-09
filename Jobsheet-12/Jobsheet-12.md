@@ -8,6 +8,7 @@
 ![](img/2.png)
 
 ### D. Menyembunyikan Kolom Secara Default
+![](img/3.png)
 
 ### E. Penyimpanan Preferensi Kolom
 
