@@ -4,8 +4,8 @@
 ### D. Membuat Dropdown Searchable
 ![](img/1.png)
 
-### E. Relationship pada Model
-![](img/1.png)
+### I. Hasil Relationship Manager
+![](img/2.png)
 
 ### O. Analisis & Diskusi
 1. Apa perbedaan relationship() dengan options()?
