@@ -1,8 +1,11 @@
 # LAPORAN PRAKTIKUM JOBSHEET-14
 
 ## Pertemuan 15 – Implementasi Many-to-Many Relationship pada Filament
-### D. Membuat Dropdown Searchable
+### F. Membuat Pivot Table
+![](img/1.png)
 
+### H. Membuat Model Tag
+![](img/2.png)
 
 ### T. Analisis & Diskusi
 1. Apa perbedaan HasMany dan Many-to-Many?
