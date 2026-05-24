@@ -22,6 +22,12 @@ return new class extends Migration {
             $table->date('published_at')->nullable();
             $table->timestamps();
         });
+
+        Schema::create('tags', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->timestamps();
+        });
     }
 
     /**
