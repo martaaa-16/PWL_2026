@@ -7,6 +7,9 @@
 ### I. Hasil Relationship Manager
 ![](img/2.png)
 
+### J. Menambahkan Kolom pada Relationship Table
+![](img/3.png)
+
 ### O. Analisis & Diskusi
 1. Apa perbedaan relationship() dengan options()?
 2. Mengapa searchable penting untuk dataset besar?
