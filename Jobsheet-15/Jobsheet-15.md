@@ -7,6 +7,9 @@
 ### H. Membuat Model Tag
 ![](img/2.png)
 
+Form Tag
+![](img/3.png)
+
 ### T. Analisis & Diskusi
 1. Apa perbedaan HasMany dan Many-to-Many?
 2. Mengapa pivot table diperlukan?
