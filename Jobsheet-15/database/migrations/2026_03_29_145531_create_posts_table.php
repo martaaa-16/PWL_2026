@@ -45,6 +45,8 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('post_tag'); // Hapus tabel pivot dulu
+        Schema::dropIfExists('tags');     // Hapus tabel tags
+        Schema::dropIfExists('posts');    // Hapus tabel posts
     }
 };
